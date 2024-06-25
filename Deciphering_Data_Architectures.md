@@ -15,7 +15,7 @@
 
 
 
-### Big Data
+### Introduction Data Architectures
 
 "If you think good data architecture is expensive, try a cheap one"
 
@@ -25,7 +25,7 @@ The author talks about a $100M project that had to be scrapped and started from 
 
 Its all about getting the right information to the right people ar the right time in the right format.
 
-
+### Big Data
 
 **Introduction to Big Data**
 
@@ -36,14 +36,14 @@ Big data encompasses all data, regardless of size, speed, or type. It can be def
 `Velocity`: The speed at which data is generated and processed, ranging from batch processing to real-time streaming.  
 `Veracity`: The accuracy and reliability of data, which can be affected by sources' reliability.  
 `Variability`: The consistency of data in terms of format, quality, and meaning.  
-`Value``: The usefulness and relevance of data for gaining business insights and making informed decisions.  
+`Value`: The usefulness and relevance of data for gaining business insights and making informed decisions.  
 
-Big Datav´s have been increasing over the years, at first the where only 3. Accodring to the Gartner group you needed to have 2 of those v´s to be able to talk about big data.
+Big Data v´s have been increasing over the years, at first the where only 3. Accodring to the Gartner group you needed to have 2 of those v´s to be able to talk about big data.
 In other words, if you only had a large volume of data, but it didnt not grow or did no have different formats, then it was not big data, no matter how mcuh data you had.
 
 
-**Data Maturity**
-Data maturity describes the stages of development in an organization’s ability to manage and utilize data:
+**Data Maturity**  
+Data maturity describes the stages of development in an organization’s ability to manage and utilize data
 
 `Reactive`: Data is scattered and managed informally, often leading to inefficiencies and inconsistencies.  
 `Informative`: Data centralization improves analysis and reporting, but solutions are often not scalable and are limited in data handling capabilities.  
@@ -54,16 +54,20 @@ Data maturity describes the stages of development in an organization’s ability
 
 ### Types of Data Architectures.
 
-####DWH
-Relational data consumption, with difficulties to scale in terms of cost and volume.  
+`DWH`Relational data consumption, with difficulties to scale in terms of cost and volume.  
 
-####Data Lake   
+`Data Lake` Introduced in 2010, is like a giant repository of files that had the potential to be consumed. It comes right on the heels of the rise of Big Data. It solves the scalability problems of DWH
+but encounteres several obstagles:
+ - `managemet` Lack of ACID and lineage properties led to redundat data problems.   
+ - `lack of skills` end users were far from being able to use this data properly (jupyter notebooks etc...).  
+ 
+`MDW modern Data Warehouse`: combine the benefits of both relationa DWH and Data Lake integrating various technologies to support data staging, preparation, security and compliance.
+ - While Lakes primarily store raw, unstructured data, MDL support both.  
+ - Performance: Combining the processing power of DWH with the storage capacity of Data lakes, MDW offer improve performance.  
+ - Real-Time Data Processing.
+ 
 
-Introduced in 2010, is like a giant repository of files that had the potential to be consumed. It comes right on the heels of the rise of Big Data. It solves the scalability problems of DWH
-but encounteres several obstagles.  
 
-- `Management`: Without excessive control they run the risk of runing into a data swamp. Users importing data, without metadat to support operations such as traceability or lineage.  
-- `user skills`: end-users were far from having the necessary skills to be able to deal with this data.  
 
 
 
