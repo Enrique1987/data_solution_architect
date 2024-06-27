@@ -54,7 +54,7 @@ Data maturity describes the stages of development in an organization’s ability
 
 ### Types of Data Architectures.
 
-`DWH`Relational data consumption, with difficulties to scale in terms of cost and volume.  
+`DWH` Relational data consumption, with difficulties to scale in terms of cost and volume.  
 
 `Data Lake` Introduced in 2010, is like a giant repository of files that had the potential to be consumed. It comes right on the heels of the rise of Big Data. It solves the scalability problems of DWH
 but encounteres several obstagles:
@@ -65,10 +65,15 @@ but encounteres several obstagles:
  - While Lakes primarily store raw, unstructured data, MDL support both.  
  - Performance: Combining the processing power of DWH with the storage capacity of Data lakes, MDW offer improve performance.  
  - Real-Time Data Processing.
+
+`Data Fabric`: Evolution of MDW with more technology adde to source more data, secure it, and make it available. 
+
+`Data Lakehouse` Become popular in 2020 when Databricks started using the term. The concept of a data lake in your architecture. All types of data are ingested into the data lake, and all queries and reports are done from the data lake.  
  
+`Data Mesh`
+At a glance, it looks a bit like parallel processing. Instead of having many data sources that deploy in one place where teh team of data engineers process the data and clean it etc..  
+You have a bunch of small teams of engineers that process teh data and clean it from the source.  
 
+(.img/Data_Architectures_Picture.PNG)
 
-
-
-
-
+#### Architecture Desing Session (ADS)
