@@ -52,7 +52,7 @@ Data maturity describes the stages of development in an organization’s ability
 `Self-Service Business Intelligence (BI)`: Traditional BI, which relies on IT to generate reports, is being replaced by self-service BI, enabling end users to directly access and analyze data. This shift requires a data architecture built with end users' needs in mind, promoting efficiency and reducing reliance on IT.  
 
 
-### Types of Data Architectures.
+### Types of Data Architectures
 
 `DWH` Relational data consumption, with difficulties to scale in terms of cost and volume.  
 
@@ -76,4 +76,23 @@ You have a bunch of small teams of engineers that process teh data and clean it 
 
 (.img/Data_Architectures_Picture.PNG)
 
-#### Architecture Desing Session (ADS)
+### The Architecture Design Session
+
+Architectue Design Session (ADS, its a hight-level design of a solution to clllect data for specific business opportunities.  
+The first ADS is the start of the architecture process and will lead to many more discussions.
+
+#### Why hold an ADS ?
+
+Basically because they are crucial to build a successful data solution. 
+
+`Arcuitecture design session` is a structure discussion with business and technical stakeholders that´s drive in a high-level design of soluto to collect data from specific business oportunities.  
+
+The ADS produce two ouputs:
+
+- An architecture that can server as starting point for the data solution.  
+- A high-level plan of action, which may include follow-on demostrations, proofs of concept and product discussions.  
+
+
+ADS is about to includ your organization customers and/or partner and discuss about current enviroment and pain point that were blocking progress.  
+
+
