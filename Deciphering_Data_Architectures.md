@@ -1,18 +1,14 @@
 # Deciphering Data Architectures  
 #### Choosing Between a Modern Data Warehouse, Data Fabric, Data Lakehouse and Data Mesh.
 
-## Part I. Foundation
-
-- 1. [Big Data](#big-data)
-- 2. [Types of Data Architectures](#types-of-data-architectures)
-- 3. [The Architecture Design Session](#the-architecture-design-session)
-
-## Part II. Common Data ARchitecture Concepts
-
-- 4. [The Relational Data Warehouse](#the-relational-data-warehouse)
-- 5. [Data Lake](#data-lake)
-
-
+- [Part I. Foundation](#part-i-foundation)
+  - 1. [Big Data](#big-data)
+  - 2. [Types of Data Architectures](#types-of-data-architectures)
+  - 3. [The Architecture Design Session](#the-architecture-design-session)
+  
+- [Part II. Common Data Architecture Concepts](#part-ii-common-data-architecture-concepts)
+  - 4. [The Relational Data Warehouse](#the-relational-data-warehouse)
+  - 5. [Data Lake](#data-lake)
 
 
 ### Introduction Data Architectures
@@ -107,4 +103,9 @@ ADS is about to includ your organization customers and/or partner and discuss ab
 	
 ![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/02_ADS_Meeting.PNG)
 	
-
+- `Discovery:`
+  - customer pain points.  
+  - current technology and architecture.  
+  - future architecture.  
+  - decision already made about technologies, products or tools.  
+  
