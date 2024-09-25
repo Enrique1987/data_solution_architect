@@ -96,3 +96,15 @@ The ADS produce two ouputs:
 ADS is about to includ your organization customers and/or partner and discuss about current enviroment and pain point that were blocking progress.  
 
 
+**Before the ADS**
+- `Preparing:` You have to prepare all the needs, physical / virtual , enought room.
+    Make sure find out the project budget and timeline and identify the decision maker.  
+	
+	- customer´s problems with their current architecture.  
+	- How can you help the customer.    
+	- Account Teams goals and the outcome they wan t from the meeting.  
+	- How well the customer knows your products.  
+	
+![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/02_ADS_Meeting.PNG)
+	
+
