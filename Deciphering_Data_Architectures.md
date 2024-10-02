@@ -109,3 +109,16 @@ ADS is about to includ your organization customers and/or partner and discuss ab
   - future architecture.  
   - decision already made about technologies, products or tools.  
   
+## Part II. Common Data Architecture Concepts
+
+### The Relatinal Data Warehouse
+
+RDW is where you centrally store and manage large columnes of structured data copied from multiple data sources to be used for historical and trend analysiss reporting.
+
+`SVOT` refers the practice of creating a unified, consitent view of an organization´s data. Any question about data can be answer by the DWH
+
+![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/04_EDW.PNG)
+
+
+#### Top-Down Approach
+
