@@ -111,13 +111,17 @@ ADS is about to includ your organization customers and/or partner and discuss ab
   
 ## Part II. Common Data Architecture Concepts
 
-### The Relatinal Data Warehouse
+### The Relational Data Warehouse
 
 RDW is where you centrally store and manage large columnes of structured data copied from multiple data sources to be used for historical and trend analysiss reporting.
 
-`SVOT` refers the practice of creating a unified, consitent view of an organization´s data. Any question about data can be answer by the DWH
+`SVOT` (single version of true) refers the practice of creating a unified, consitent view of an organization´s data. Any question about data can be answer by the DWH, ensures that 
+all users have acces to the same information avoiding discrepancies or inconsistencies
 
 ![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/04_EDW.PNG)
+
+Typically to build a DW you will build pipelines that Typically, to build a data warehouse, you will create data pipelines that perform three
+steps, called extract, transform, and load (ETL)
 
 
 #### Top-Down Approach
