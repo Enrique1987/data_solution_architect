@@ -48,3 +48,50 @@
 * Requires culture + platform investment, not just a new architecture diagram
 
 **Rule of thumb:** If your central data team is drowning and domains keep saying “your model is wrong,” Data Mesh is a strong fit—*but only if you can enforce shared standards and provide a self-serve platform.*
+
+
+# Smoke Testing 🔥
+
+## What it is
+A **smoke test** is a **small, fast set of checks** that answers:  
+**“Does the build/deploy basically work enough to continue?”**
+
+---
+
+## Smoke Testing explained at 3 levels
+
+### 👶 Kid — “Does the toy work at all?”
+- You press one button to see if the toy turns on.
+- If it doesn’t start, you stop and fix it first.
+**Takeaway:** A smoke test is a quick “does it basically work?” check.
+
+### 🧑‍🎓 Teen — “Quick check before you post”
+- You preview your Reel once: sound, video, captions.
+- If it’s broken, you fix it before posting.
+**Takeaway:** Smoke test = fast sanity check before going live.
+
+### 👨‍💻 Tech Lead — “Deploy check for a service”
+- **Scenario:** After deploying a new version, run minimal checks: app boots, DB connects, `/health` is green, one core flow works (login → dashboard).
+- **Definition:** A **small, fast suite** that verifies **critical paths** and basic system health.
+- **When to use:**
+  - After every **build** (CI fail-fast).
+  - After every **deploy** (staging/prod viability).
+  - After big config/migration changes.
+- **Pros:**
+  - Catches “totally broken” releases early.
+  - Saves time and reduces noisy failures later.
+- **Cons:**
+  - Doesn’t guarantee full quality.
+  - Can become slow/flaky if it grows too large.
+
+---
+
+## 🎯 Cheat sheet
+- Small + fast + critical-path focused
+- Run after build + after deploy
+- Goal: fail fast, not catch everything
+- Keep minimal and stable
+- Typical checks: boot, health, DB connect, one key user journey
+
+**Rule of thumb:**  
+If it takes more than a few minutes or covers many edge cases, it’s not smoke testing anymore.
