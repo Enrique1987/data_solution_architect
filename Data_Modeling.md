@@ -79,6 +79,65 @@ This structure:
 - makes analytics and reporting much easier
 
 ---
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ SALES_ORDER : places
+    CASHIER  ||--o{ SALES_ORDER : processes
+    SALES_ORDER ||--|{ SALES_ORDER_LINE : contains
+    MENU_ITEM ||--o{ SALES_ORDER_LINE : sold_as
+    SALES_ORDER ||--o{ PAYMENT : paid_by
+
+    CUSTOMER {
+        int customer_id PK
+        string name
+        string phone
+        string email
+        datetime created_at
+    }
+
+    CASHIER {
+        int cashier_id PK
+        string name
+        datetime hired_at
+        boolean is_active
+    }
+
+    SALES_ORDER {
+        int order_id PK
+        datetime order_time
+        int customer_id FK
+        int cashier_id FK
+        decimal order_total
+        string status
+    }
+
+    SALES_ORDER_LINE {
+        int order_id PK, FK
+        int line_nbr PK
+        int item_id FK
+        int qty
+        decimal unit_price
+        decimal line_total
+    }
+
+    MENU_ITEM {
+        int item_id PK
+        string item_name
+        string category
+        decimal current_price
+        boolean is_active
+    }
+
+    PAYMENT {
+        int payment_id PK
+        int order_id FK
+        string method
+        decimal amount
+        datetime paid_at
+    }
+```
+
+
 
 ## Key takeaways
 - **1NF**: don’t store lists inside a single column (no repeating groups).
