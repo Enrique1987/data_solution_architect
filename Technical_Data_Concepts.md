@@ -361,3 +361,140 @@ SCD is about tracking state changes.
 If your source system:
 - Updates records → SCD relevant
 - Only generates new events → SCD not relevant
+
+
+# Data Architecture – Conceptual Overview
+
+## 1. Relational Databases (RDBMS)
+
+Relational Database Management Systems (RDBMS) were originally designed for **OLTP (Online Transaction Processing)** workloads.
+
+Typical characteristics:
+- Structured data
+- ACID transactions
+- Insert / Update / Delete operations
+- Optimized for daily business operations (customers, orders, invoices, etc.)
+
+Examples:
+- Oracle
+- SQL Server
+- MySQL
+- PostgreSQL
+
+---
+
+## 2. Traditional Data Warehouse
+
+A Data Warehouse is a centralized analytical system that:
+- Integrates data from multiple relational systems
+- Optimizes data for reporting and analytics (OLAP)
+- Uses dimensional modeling (Star Schema, Snowflake Schema)
+
+Characteristics:
+- Structured data only
+- Heavy ETL processes
+- Expensive vertical scaling (historically)
+
+Purpose:
+To enable consolidated reporting and business intelligence.
+
+---
+
+## 3. Modern Data Warehouse
+
+Modern Data Warehouses evolved with cloud computing and distributed architectures.
+
+Characteristics:
+- Separation of storage and compute
+- Distributed scaling
+- SQL-first analytics
+- Managed infrastructure
+
+Examples:
+- Snowflake
+- Azure Synapse
+- Google BigQuery
+
+They retain the warehouse concept but scale much more efficiently.
+
+---
+
+## 4. Data Lake
+
+A Data Lake is a scalable storage layer that:
+- Stores raw data from any source
+- Supports structured, semi-structured, and unstructured data
+- Typically uses cloud object storage (ADLS, S3, GCS)
+
+Characteristics:
+- Cheap storage
+- Schema-on-read
+- High flexibility
+- Risk of becoming a "data swamp" without governance
+
+A Data Lake focuses on **storage**, not necessarily governance or modeling.
+
+---
+
+## 5. Data Lakehouse
+
+The Lakehouse combines:
+- The flexibility of a Data Lake
+- The structure and governance of a Data Warehouse
+
+Key characteristics:
+- Centralized storage
+- Structured refinement layers (e.g., Bronze / Silver / Gold)
+- ACID transactions on files (Delta format)
+- Governed transformations
+- Analytics-ready data
+
+The Lakehouse introduces:
+- Standardized transformation pipelines
+- Clear refinement stages
+- Strong governance
+
+The term "Lakehouse" was popularized by Databricks.
+
+---
+
+## 6. Data Hub (Conceptual Clarification)
+
+A Data Hub is more conceptual than technical.
+
+It represents:
+- A centralized access and governance framework
+- Data may remain in source systems
+- Federated access instead of centralized storage
+
+Key difference:
+
+| Data Lake | Data Hub |
+|-----------|----------|
+| Centralized storage | Federated access |
+| Data moved into lake | Data stays in source |
+| Storage-focused | Access-focused |
+
+Important:
+Many organizations use the term "Data Hub" as a generic umbrella concept.
+
+Vendors use different terminology:
+- Databricks → Lakehouse
+- Snowflake → Data Cloud
+- Google → Data Platform
+- Companies may use "Data Hub" as a neutral abstraction
+
+In practice:
+Many "Data Hub" initiatives are actually Lakehouse implementations.
+
+---
+
+## Key Practical Insight
+
+Most real-world projects want:
+- Centralized governance
+- Data refinement layers
+- Standard transformations
+- Analytics consumption
+
+This typically leads to a Lakehouse architecture, even if the business calls it a "Data Hub".
