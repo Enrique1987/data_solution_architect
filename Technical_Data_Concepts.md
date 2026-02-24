@@ -279,3 +279,85 @@ If you’re still collecting lots of messy sources and want flexibility for anal
 
 **Rule of thumb:**  
 If you need “cheap storage + all data types” *and* “trusted tables for BI with updates/deletes” → **Lakehouse**. If you only need clean reporting tables and strict relational modeling → **Warehouse**.
+
+
+# Slowly Changing Dimensions (SCD)
+
+## 1. What is SCD?
+
+SCD defines how changes in dimensional data are handled over time.
+
+Used in Data Warehouses.
+
+---
+
+## 2. SCD Types
+
+### SCD Type 0
+- No changes allowed
+- Original value preserved
+
+### SCD Type 1
+- Overwrite existing value
+- No history preserved
+
+Example:
+Customer email correction.
+
+---
+
+### SCD Type 2
+- Full historical tracking
+- Uses:
+  - valid_from
+  - valid_to
+  - is_current flag
+
+Example:
+Customer changes address.
+Old version remains valid until specific date.
+
+---
+
+## 3. When to Use SCD Type 2
+
+Use SCD2 when:
+- Source system allows updates
+- Historical tracking is required
+- Dimensional attributes change over time
+- Reporting requires "as-of-date" analysis
+
+Typical Sources:
+- ERP systems
+- CRM systems
+- Relational databases (Oracle, SAP, etc.)
+
+---
+
+## 4. When NOT to Use SCD
+
+If data is:
+
+- Pure event-based
+- Append-only
+- No updates to previous records
+
+Examples:
+- IoT sensor readings
+- Log events
+- Alarm signals
+- Telemetry data
+
+In these cases:
+No SCD needed.
+Simply append records.
+
+---
+
+## 5. Key Insight
+
+SCD is about tracking state changes.
+
+If your source system:
+- Updates records → SCD relevant
+- Only generates new events → SCD not relevant
