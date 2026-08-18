@@ -10,6 +10,7 @@
   - 4. [The Relational Data Warehouse](#the-relational-data-warehouse)
   - 5. [Data Lake](#data-lake)
 
+## Part I. Foundation
 
 ### Introduction Data Architectures
 
@@ -70,7 +71,9 @@ but encounteres several obstagles:
 At a glance, it looks a bit like parallel processing. Instead of having many data sources that deploy in one place where teh team of data engineers process the data and clean it etc..  
 You have a bunch of small teams of engineers that process teh data and clean it from the source.  
 
-(.img/Data_Architectures_Picture.PNG)
+![Data architecture patterns](../../assets/images/data-architecture-patterns.png)
+
+![Data architecture comparison](../../assets/images/data-architecture-comparison.png)
 
 ### The Architecture Design Session
 
@@ -101,7 +104,7 @@ ADS is about to includ your organization customers and/or partner and discuss ab
 	- Account Teams goals and the outcome they wan t from the meeting.  
 	- How well the customer knows your products.  
 	
-![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/02_ADS_Meeting.PNG)
+![Architecture design session agenda](../../assets/images/architecture-design-session.png)
 	
 - `Discovery:`
   - customer pain points.  
@@ -118,7 +121,7 @@ RDW is where you centrally store and manage large columnes of structured data co
 `SVOT` (single version of true) refers the practice of creating a unified, consitent view of an organization´s data. Any question about data can be answer by the DWH, ensures that 
 all users have acces to the same information avoiding discrepancies or inconsistencies
 
-![image](https://github.com/Enrique1987/data_solution_architect/blob/main/img/04_EDW.PNG)
+![Enterprise data warehouse](../../assets/images/enterprise-data-warehouse.png)
 
 Typically to build a DW you will build pipelines that Typically, to build a data warehouse, you will create data pipelines that perform three
 steps, called extract, transform, and load (ETL)

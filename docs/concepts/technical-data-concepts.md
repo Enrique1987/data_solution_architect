@@ -1,4 +1,6 @@
-## Data Mesh 🧩
+# Technical Data Concepts
+
+## Data Mesh
 
 ### 👶 Kid — Lego City at home
 
@@ -50,27 +52,27 @@
 **Rule of thumb:** If your central data team is drowning and domains keep saying “your model is wrong,” Data Mesh is a strong fit—*but only if you can enforce shared standards and provide a self-serve platform.*
 
 
-# Smoke Testing 🔥
+## Smoke Testing
 
-## What it is
+### What it is
 A **smoke test** is a **small, fast set of checks** that answers:  
 **“Does the build/deploy basically work enough to continue?”**
 
 ---
 
-## Smoke Testing explained at 3 levels
+### Smoke Testing explained at 3 levels
 
-### 👶 Kid — “Does the toy work at all?”
+#### 👶 Kid — “Does the toy work at all?”
 - You press one button to see if the toy turns on.
 - If it doesn’t start, you stop and fix it first.
 **Takeaway:** A smoke test is a quick “does it basically work?” check.
 
-### 🧑‍🎓 Teen — “Quick check before you post”
+#### 🧑‍🎓 Teen — “Quick check before you post”
 - You preview your Reel once: sound, video, captions.
 - If it’s broken, you fix it before posting.
 **Takeaway:** Smoke test = fast sanity check before going live.
 
-### 👨‍💻 Tech Lead — “Deploy check for a service”
+#### 👨‍💻 Tech Lead — “Deploy check for a service”
 - **Scenario:** After deploying a new version, run minimal checks: app boots, DB connects, `/health` is green, one core flow works (login → dashboard).
 - **Definition:** A **small, fast suite** that verifies **critical paths** and basic system health.
 - **When to use:**
@@ -86,7 +88,7 @@ A **smoke test** is a **small, fast set of checks** that answers:
 
 ---
 
-## 🎯 Cheat sheet
+### 🎯 Cheat sheet
 - Small + fast + critical-path focused
 - Run after build + after deploy
 - Goal: fail fast, not catch everything
@@ -95,11 +97,7 @@ A **smoke test** is a **small, fast set of checks** that answers:
 
 **Rule of thumb:**  
 If it takes more than a few minutes or covers many edge cases, it’s not smoke testing anymore.
-# Semantic Layer 🧠
-
-
-
-## Semantic Layer 🧠
+## Semantic Layer
 
 ### 👶 Kid — Toy box labels at home
 
@@ -150,13 +148,11 @@ If it takes more than a few minutes or covers many edge cases, it’s not smoke 
 * Enables **consistency + governance** (certification, permissions).
 * Best ROI when **multiple tools/teams** consume the same KPIs.
 
-## Rule of thumb 🧭
+### Rule of thumb 🧭
 
 If two different teams (or two different tools) compute the same KPI, you’re ready for a semantic layer—otherwise, you’ll argue about “what the number means” forever.
 
-# Data Hub 🧩
-
-## Data Hub 🧩
+## Data Hub
 
 ### 👶 Kid — The Toy Box in the Living Room
 - Imagine all your toys are scattered in different rooms.
@@ -197,7 +193,7 @@ If multiple teams keep rebuilding the same integrations and arguing about “the
 
 
 
-## Data Lake 🏞️
+## Data Lake
 
 ### 👶 Kid — Toy Box for *everything*
 - Imagine one **giant toy box** where you can throw **all toys**: LEGO, cars, plushies, even random stickers.
@@ -240,7 +236,7 @@ If you’re still collecting lots of messy sources and want flexibility for anal
 
 
 
-## Data Lakehouse 🏞️🏠
+## Data Lakehouse
 
 <img width="1007" height="544" alt="image" src="https://github.com/user-attachments/assets/4a2fde19-cdd3-4536-b638-d913f67ce926" />
 
@@ -281,9 +277,9 @@ If you’re still collecting lots of messy sources and want flexibility for anal
 If you need “cheap storage + all data types” *and* “trusted tables for BI with updates/deletes” → **Lakehouse**. If you only need clean reporting tables and strict relational modeling → **Warehouse**.
 
 
-# Slowly Changing Dimensions (SCD)
+## Slowly Changing Dimensions (SCD)
 
-## 1. What is SCD?
+### 1. What is SCD?
 
 SCD defines how changes in dimensional data are handled over time.
 
@@ -291,13 +287,13 @@ Used in Data Warehouses.
 
 ---
 
-## 2. SCD Types
+### 2. SCD Types
 
-### SCD Type 0
+#### SCD Type 0
 - No changes allowed
 - Original value preserved
 
-### SCD Type 1
+#### SCD Type 1
 - Overwrite existing value
 - No history preserved
 
@@ -306,7 +302,7 @@ Customer email correction.
 
 ---
 
-### SCD Type 2
+#### SCD Type 2
 - Full historical tracking
 - Uses:
   - valid_from
@@ -319,7 +315,7 @@ Old version remains valid until specific date.
 
 ---
 
-## 3. When to Use SCD Type 2
+### 3. When to Use SCD Type 2
 
 Use SCD2 when:
 - Source system allows updates
@@ -334,7 +330,7 @@ Typical Sources:
 
 ---
 
-## 4. When NOT to Use SCD
+### 4. When NOT to Use SCD
 
 If data is:
 
@@ -354,7 +350,7 @@ Simply append records.
 
 ---
 
-## 5. Key Insight
+### 5. Key Insight
 
 SCD is about tracking state changes.
 
@@ -363,9 +359,9 @@ If your source system:
 - Only generates new events → SCD not relevant
 
 
-# Data Architecture – Conceptual Overview
+## Data Architecture: Conceptual Overview
 
-## 1. Relational Databases (RDBMS)
+### 1. Relational Databases (RDBMS)
 
 Relational Database Management Systems (RDBMS) were originally designed for **OLTP (Online Transaction Processing)** workloads.
 
@@ -383,7 +379,7 @@ Examples:
 
 ---
 
-## 2. Traditional Data Warehouse
+### 2. Traditional Data Warehouse
 
 A Data Warehouse is a centralized analytical system that:
 - Integrates data from multiple relational systems
@@ -400,7 +396,7 @@ To enable consolidated reporting and business intelligence.
 
 ---
 
-## 3. Modern Data Warehouse
+### 3. Modern Data Warehouse
 
 Modern Data Warehouses evolved with cloud computing and distributed architectures.
 
@@ -419,7 +415,7 @@ They retain the warehouse concept but scale much more efficiently.
 
 ---
 
-## 4. Data Lake
+### 4. Data Lake
 
 A Data Lake is a scalable storage layer that:
 - Stores raw data from any source
@@ -436,7 +432,7 @@ A Data Lake focuses on **storage**, not necessarily governance or modeling.
 
 ---
 
-## 5. Data Lakehouse
+### 5. Data Lakehouse
 
 The Lakehouse combines:
 - The flexibility of a Data Lake
@@ -458,7 +454,7 @@ The term "Lakehouse" was popularized by Databricks.
 
 ---
 
-## 6. Data Hub (Conceptual Clarification)
+### 6. Data Hub (Conceptual Clarification)
 
 A Data Hub is more conceptual than technical.
 
@@ -489,7 +485,7 @@ Many "Data Hub" initiatives are actually Lakehouse implementations.
 
 ---
 
-## Key Practical Insight
+### Key Practical Insight
 
 Most real-world projects want:
 - Centralized governance

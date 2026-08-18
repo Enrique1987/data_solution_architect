@@ -144,6 +144,7 @@ erDiagram
 - **3NF**: avoid transitive dependency (non-key columns should not depend on other non-key columns).
 - Good models reduce duplication, prevent update anomalies, and make querying easier.
 
+## From operational model to analytical model
 
 Alright — think of your current ER model as **OLTP** (optimized for correct inserts/updates). To go to an **analytics schema** (optimized for fast GROUP BYs), you typically convert it into a **dimensional model** (Star Schema).
 
