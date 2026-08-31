@@ -11,6 +11,7 @@ This repository is currently in its **organization phase**: the existing materia
 | Architecture | [Deciphering Data Architectures](docs/architecture/deciphering-data-architectures.md) | Book notes covering architecture foundations, design sessions and common architecture patterns |
 | Data modeling | [Cafeteria POS data modeling](docs/modeling/cafeteria-pos-data-modeling.md) | Operational modeling, normalization and dimensional modeling in one worked example |
 | Data modeling | [Snowflakes, outriggers, and bridge tables](docs/modeling/snowflakes-outriggers-and-bridge-tables.md) | Dimensional-modeling patterns for normalized dimensions, dimension-to-dimension links, and complex relationships |
+| Data modeling | [Star schema in Silver vs Gold](docs/modeling/star-schema-silver-vs-gold.md) | Decision framework for assigning dimensional modeling responsibilities across Medallion layers |
 | Technical concepts | [Technical data concepts](docs/concepts/technical-data-concepts.md) | Explanations and cheat sheets collected at different levels of detail |
 
 ## Knowledge index
@@ -28,6 +29,7 @@ This repository is currently in its **organization phase**: the existing materia
 
 - [Operational and dimensional data modeling](docs/modeling/cafeteria-pos-data-modeling.md)
 - [Snowflakes, outriggers, and bridge tables](docs/modeling/snowflakes-outriggers-and-bridge-tables.md)
+- [Star schema in Silver vs Gold](docs/modeling/star-schema-silver-vs-gold.md)
 - [Semantic Layer](docs/concepts/technical-data-concepts.md#semantic-layer)
 - [Slowly Changing Dimensions](docs/concepts/technical-data-concepts.md#slowly-changing-dimensions-scd)
 
