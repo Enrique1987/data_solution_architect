@@ -4,36 +4,13 @@ Personal knowledge base for data architecture, data modeling and related technic
 
 This repository is currently in its **organization phase**: the existing material is being classified and made easier to navigate before new topics are added.
 
-## Start here
+## What this repository covers
 
-| Area | Document | Current material |
-| --- | --- | --- |
-| Architecture | [Deciphering Data Architectures](docs/architecture/deciphering-data-architectures.md) | Book notes covering architecture foundations, design sessions and common architecture patterns |
-| Data modeling | [Cafeteria POS data modeling](docs/modeling/cafeteria-pos-data-modeling.md) | Operational modeling, normalization and dimensional modeling in one worked example |
-| Data modeling | [Snowflakes, outriggers, and bridge tables](docs/modeling/snowflakes-outriggers-and-bridge-tables.md) | Dimensional-modeling patterns for normalized dimensions, dimension-to-dimension links, and complex relationships |
-| Technical concepts | [Technical data concepts](docs/concepts/technical-data-concepts.md) | Explanations and cheat sheets collected at different levels of detail |
+- **Architecture** — architecture foundations, design sessions, and platform patterns.
+- **Data modeling** — operational models, dimensional modeling, and patterns such as snowflakes, outriggers, bridges, and Medallion-layer responsibilities.
+- **Technical concepts** — concise explainers and cheat sheets for common data topics.
 
-## Knowledge index
-
-### Architecture and platforms
-
-- [Data architecture conceptual overview](docs/concepts/technical-data-concepts.md#data-architecture-conceptual-overview)
-- [Data Mesh](docs/concepts/technical-data-concepts.md#data-mesh)
-- [Data Hub](docs/concepts/technical-data-concepts.md#data-hub)
-- [Data Lake](docs/concepts/technical-data-concepts.md#data-lake)
-- [Data Lakehouse](docs/concepts/technical-data-concepts.md#data-lakehouse)
-- [Architecture design sessions](docs/architecture/deciphering-data-architectures.md#the-architecture-design-session)
-
-### Modeling and consumption
-
-- [Operational and dimensional data modeling](docs/modeling/cafeteria-pos-data-modeling.md)
-- [Snowflakes, outriggers, and bridge tables](docs/modeling/snowflakes-outriggers-and-bridge-tables.md)
-- [Semantic Layer](docs/concepts/technical-data-concepts.md#semantic-layer)
-- [Slowly Changing Dimensions](docs/concepts/technical-data-concepts.md#slowly-changing-dimensions-scd)
-
-### Engineering practices
-
-- [Smoke Testing](docs/concepts/technical-data-concepts.md#smoke-testing)
+For the complete, topic-by-topic navigation, see the [knowledge index](docs/).
 
 ## Repository structure
 
@@ -42,6 +19,7 @@ This repository is currently in its **organization phase**: the existing materia
 |-- assets/
 |   `-- images/
 |-- docs/
+|   |-- README.md
 |   |-- architecture/
 |   |-- concepts/
 |   `-- modeling/
