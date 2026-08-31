@@ -21,6 +21,7 @@ For the complete, topic-by-topic navigation, see the [knowledge index](docs/).
 |-- docs/
 |   |-- README.md
 |   |-- architecture/
+|   |-- cheat-sheets/
 |   |-- concepts/
 |   `-- modeling/
 `-- README.md

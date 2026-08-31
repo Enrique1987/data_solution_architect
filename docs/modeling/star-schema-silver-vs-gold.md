@@ -1,7 +1,5 @@
 # Star Schema in Silver vs Gold
 
-![Comparison of star-schema placement in Silver and Gold](../../assets/images/star-schema-silver-vs-gold.png)
-
 ## Abstract
 
 A star schema can technically be built in either Silver or Gold.
