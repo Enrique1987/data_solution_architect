@@ -1,7 +1,5 @@
 # Snowflakes, Outriggers, and Bridge Tables in Dimensional Modeling
 
-![Comparison of snowflake, outrigger, and bridge patterns](../../assets/images/snowflake-vs-outrigger-vs-bridge.png)
-
 ## Abstract / Conclusion
 
 All three concepts extend a **star schema**, but they solve different problems:

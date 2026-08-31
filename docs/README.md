@@ -2,6 +2,11 @@
 
 Use this index to navigate the repository by topic.
 
+## Cheat Sheets
+
+- [Star schema in Silver vs Gold](cheat-sheets/README.md#star-schema-in-silver-vs-gold)
+- [Snowflake vs Outrigger vs Bridge](cheat-sheets/README.md#snowflake-vs-outrigger-vs-bridge)
+
 ## Architecture and platforms
 
 - [Data architecture conceptual overview](concepts/technical-data-concepts.md#data-architecture-conceptual-overview)
