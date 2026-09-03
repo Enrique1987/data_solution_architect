@@ -14,6 +14,7 @@ Use this index to navigate the repository by topic.
 - [Data Lake](concepts/technical-data-concepts.md#data-lake)
 - [Data Lakehouse](concepts/technical-data-concepts.md#data-lakehouse)
 - [Architecture design sessions](architecture/deciphering-data-architectures.md#the-architecture-design-session)
+- [Platform consolidation and exit strategy](architecture/platform-consolidation-and-exit-strategy.md) — decide when an integrated platform is sufficient, when a specialist is justified, and how to preserve resilience and portability.
 
 ## Data modeling
 
