@@ -10,6 +10,8 @@ Cuando exista una duda entre **Dimension** y **Fact**, empezar con tres pregunta
 
 Es una regla de orientación, no un sustituto del análisis del negocio. La clasificación final depende del significado funcional del dato y del nivel de detalle requerido.
 
+[Abrir la chuleta visual: Fact Table vs Dimension Table vs Factless Fact](../../assets/images/fact-vs-dimension-vs-factless-fact.png)
+
 ## Dimension: «¿qué es algo?»
 
 Una Dimension describe una entidad, clasificación o contexto. Por ejemplo:
