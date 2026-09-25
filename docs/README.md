@@ -18,7 +18,7 @@ Use this index to navigate the repository by topic.
 
 ## Data modeling
 
-- [Modelo dimensional: marco mental para distinguir Dimensions y Facts](modeling/modelo-dimensional-marco-mental.md) — guía en español para decidir entre entidad, hecho y grain, con aplicación a Factless Facts.
+- [Dimensional modeling mental model](modeling/dimensional-modeling-mental-model.md) — distinguish entities, events, and grain, with an application to Factless Facts.
 - [Dimensional modeling interview case](modeling/dimensional-modeling-interview-case.md) — a practical workflow for reviewing and refactoring a wide Fact table without optimizing for column count alone.
 - [Cafeteria POS data modeling](modeling/cafeteria-pos-data-modeling.md) — operational modeling, normalization, and dimensional modeling in one worked example.
 - [Snowflakes, outriggers, and bridge tables](modeling/snowflakes-outriggers-and-bridge-tables.md) — dimensional-modeling patterns for normalized dimensions, dimension-to-dimension links, and complex relationships.

@@ -24,7 +24,7 @@ Every measure must make sense at exactly that level. If one row represents one f
 
 An attribute can be compatible with the Fact grain and still belong in a Dimension. `AircraftType` may have one value per flight without breaking the grain, but it describes the aircraft rather than measuring the flight.
 
-See the [Fact, Dimension, and Grain mental model](modelo-dimensional-marco-mental.md) for the underlying distinction.
+See the [Fact, Dimension, and Grain mental model](dimensional-modeling-mental-model.md) for the underlying distinction.
 
 ## Classify every column before moving anything
 
