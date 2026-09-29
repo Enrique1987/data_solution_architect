@@ -18,6 +18,8 @@ Use this index to navigate the repository by topic.
 
 ## Data modeling
 
+- [Dimensional modeling mental model](modeling/dimensional-modeling-mental-model.md) — distinguish entities, events, and grain, with an application to Factless Facts.
+- [Dimensional modeling interview case](modeling/dimensional-modeling-interview-case.md) — a practical workflow for reviewing and refactoring a wide Fact table without optimizing for column count alone.
 - [Cafeteria POS data modeling](modeling/cafeteria-pos-data-modeling.md) — operational modeling, normalization, and dimensional modeling in one worked example.
 - [Snowflakes, outriggers, and bridge tables](modeling/snowflakes-outriggers-and-bridge-tables.md) — dimensional-modeling patterns for normalized dimensions, dimension-to-dimension links, and complex relationships.
 - [Star schema in Silver vs Gold](modeling/star-schema-silver-vs-gold.md) — a decision framework for assigning dimensional-modeling responsibilities across Medallion layers.
