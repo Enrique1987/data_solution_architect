@@ -8,7 +8,7 @@
   
 - [Part II. Common Data Architecture Concepts](#part-ii-common-data-architecture-concepts)
   - 4. [The Relational Data Warehouse](#the-relational-data-warehouse)
-  - 5. [Data Lake](#data-lake)
+  - 5. [Data Lake — under construction](#data-lake)
 
 ## Part I. Foundation
 
@@ -129,3 +129,6 @@ steps, called extract, transform, and load (ETL)
 
 #### Top-Down Approach
 
+### Data Lake
+
+**Under construction.** This planned section has not been written yet.
